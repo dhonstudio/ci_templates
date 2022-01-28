@@ -1,0 +1,1 @@
+<?= isset($js) ? implode($js) : ''?>
