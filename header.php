@@ -22,5 +22,5 @@
 
 </head>
 
-<body class="<?= isset($body_class) ? $body_class : "" ?>">
+<body class="<?= isset($body_class) ? $body_class : "" ?>" style="<?= isset($body_style) ? $body_style : "" ?>">
     
