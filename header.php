@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= isset($this->lang) ? $this->lang : "id" ?>">
+<html lang="<?= $this->lang ?>">
 
 <head>
 
