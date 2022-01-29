@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $this->lang ?>">
+<html lang="<?= isset($this->lang) ? $this->lang : "id" ?>">
 
 <head>
 
@@ -15,7 +15,7 @@
     <meta name="description" content="<?= isset($meta['description']) ? $meta['description'] : ""?>">
 
     <link rel="icon" type="image/x-icon" href="https://dhonstudio.com/assets/img/icon.ico">
-    <title><?= $title ?></title>
+    <title><?= isset($title) ? $title : "Home" ?></title>
 
     <?= isset($font) ? implode($font) : ''?>
     <?= isset($css) ? implode($css) : ''?>    
