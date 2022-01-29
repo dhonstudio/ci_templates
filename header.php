@@ -18,7 +18,8 @@
     <title><?= isset($title) ? $title : "Home" ?></title>
 
     <?= isset($font) ? implode($font) : ''?>
-    <?= isset($css) ? implode($css) : ''?>    
+    <?= isset($css) ? implode($css) : ''?>
+    <?= isset($custom_style) ? implode($custom_style) : ''?>
 
 </head>
 
