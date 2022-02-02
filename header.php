@@ -11,10 +11,10 @@
     <meta name="author" content="<?= isset($meta['author']) ? $meta['author'] : "" ?>">
     <meta name="generator" content="<?= isset($meta['generator']) ? $meta['generator'] : "" ?>">
 
-    <meta property="og:image" content="https://dhonstudio.com/assets/img/ogimg.jpg">
+    <meta property="og:image" content="<?= isset($meta['ogimage']) ? $meta['ogimage'] : "https://dhonstudio.com/assets/img/ogimg.jpg" ?>">
     <meta name="description" content="<?= isset($meta['description']) ? $meta['description'] : ""?>">
 
-    <link rel="icon" type="image/x-icon" href="https://dhonstudio.com/assets/img/icon.ico">
+    <link rel="icon" type="image/x-icon" href="<?= isset($favicon) ? $favicon : "https://dhonstudio.com/assets/img/icon.ico" ?>">
     <title><?= isset($title) ? $title : "Home" ?></title>
 
     <?= isset($font) ? implode($font) : ''?>
