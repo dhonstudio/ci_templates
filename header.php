@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $this->language ?>">
+<html lang="<?= isset($this->language['active']) ? $this->language['active'] : 'en' ?>">
 
 <head>
 
