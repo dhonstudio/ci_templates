@@ -19,6 +19,7 @@
 
     <?= isset($font) ? implode($font) : ''?>
     <?= isset($css) ? implode($css) : ''?>
+    <?= isset($js) ? implode($js) : ''?>
     <?= isset($custom_style) ? implode($custom_style) : ''?>
 
 </head>
