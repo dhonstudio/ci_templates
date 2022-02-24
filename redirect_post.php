@@ -1,5 +1,8 @@
 <form id="redirectForm" action="<?= base_url($action) ?>" method="post">
-    <input hidden name="<?= $post_name ?>" value="<?= $post_value ?>">
+    <?php foreach ($posts as $key => $p):?>
+        <?php $count = $key+1?>
+        <input hidden name="<?= $p['post_name'.$count] ?>" value="<?= $p['post_value'.$count] ?>">
+    <?php endforeach?>
 </form>
 
 <script type="text/javascript">
