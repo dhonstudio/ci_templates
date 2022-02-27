@@ -1,4 +1,4 @@
-<div class="position-fixed top-0 start-0 p-3" style="z-index: 11">
+<div class="<?= isset($custom_class) ? $custom_class : 'position-fixed top-0 start-0 p-3' ?>" style="z-index: 11">
   <?php foreach ($toasts as $key => $t) :?>
     <div id="<?= $t['id'] ?>" class="toast" role="alert" aria-live="assertive" aria-atomic="true" <?= (isset($t['delay'])) ? 'data-bs-delay="'.$t['delay'].'"' : ''?>>
       <div class="toast-header">
