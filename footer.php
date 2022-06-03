@@ -1,1 +1,1 @@
-<?= isset($js_footer) ? implode($js_footer) : '' ?>
+<?= isset($footer_assets) ? implode($footer_assets) : '' ?>

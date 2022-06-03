@@ -17,9 +17,7 @@
     <link rel="icon" type="image/x-icon" href="<?= isset($favicon) ? $favicon : "https://dhonstudio.com/assets/img/icon.ico" ?>">
     <title><?= isset($title) ? $title : "Home" ?></title>
 
-    <?= isset($font) ? implode($font) : '' ?>
-    <?= isset($css) ? implode($css) : '' ?>
-    <?= isset($js) ? implode($js) : '' ?>
+    <?= isset($header_assets) ? implode($header_assets) : '' ?>
     <?= isset($custom_style) ? implode($custom_style) : '' ?>
 
 </head>
